@@ -15,13 +15,14 @@ let
 in {
   nightly = qt6Packages.callPackage ./generic.nix rec {
     pname = "citra-nightly";
-    version = "2088";
+    version = "8433057909752c8b23fbe0224011fda6ecab1744";
 
     src = fetchFromGitHub {
-      owner = "citra-emu";
-      repo = "citra-nightly";
-      rev = "nightly-${version}";
-      sha256 = "0l9w4i0zbafcv2s6pd1zqb11vh0i7gzwbqnzlz9al6ihwbsgbj3k";
+      owner = "PabloMK7";
+      repo = "citra";
+      rev = "${version}";
+#      sha256 = "0l9w4i0zbafcv2s6pd1zqb11vh0i7gzwbqnzlz9al6ihwbsgbj3k";
+      sha256 = "sha256-LsRBddduEehqZTwBbEkZaTqWPDywoAOAA5zGtV7Va+U=";
       fetchSubmodules = true;
     };
 
@@ -30,13 +31,14 @@ in {
 
   canary = qt6Packages.callPackage ./generic.nix rec {
     pname = "citra-canary";
-    version = "2766";
+    version = "8433057909752c8b23fbe0224011fda6ecab1744";
 
     src = fetchFromGitHub {
-      owner = "citra-emu";
-      repo = "citra-canary";
-      rev = "canary-${version}";
-      sha256 = "1gm3ajphpzwhm3qnchsx77jyl51za8yw3r0j0h8idf9y1ilcjvi4";
+      owner = "PabloMK7";
+      repo = "citra";
+      rev = "${version}";
+      sha256 = "sha256-LsRBddduEehqZTwBbEkZaTqWPDywoAOAA5zGtV7Va+U=";
+#      sha256 = "1gm3ajphpzwhm3qnchsx77jyl51za8yw3r0j0h8idf9y1ilcjvi4";
       fetchSubmodules = true;
     };
 
