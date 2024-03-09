@@ -6,7 +6,7 @@ makeScopeWithSplicing' {
     compat-list = self.callPackage ./compat-list.nix {};
     nx_tzdb = self.callPackage ./nx_tzdb.nix {};
 
-    mainline = self.callPackage ./mainline.nix {};
+    dev = self.callPackage ./dev.nix {};
 #    early-access = self.callPackage ./early-access {};
   };
 }

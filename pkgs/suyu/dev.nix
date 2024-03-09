@@ -36,12 +36,13 @@
 }:
 stdenv.mkDerivation(finalAttrs: {
   pname = "suyu";
-  version = "774b4cd46685ae19f95f94f07ad9c2093cea6547";
+  version = "dev-09-03-2024";
 
   src = fetchgit {
     url = "https://gitlab.com/suyu-emu/suyu.git";
-    rev = "${finalAttrs.version}";
-    hash = "sha256-44KmRX+sOQshWhVNBwcE6Q1SLpSUy+cA/a3iSv2EFrI=";
+    ref = "dev";
+    rev = "7a33aedc57c539682915e9cdc1eb51d5fc9b8183";
+    hash = "";
     fetchSubmodules = true;
   };
 
