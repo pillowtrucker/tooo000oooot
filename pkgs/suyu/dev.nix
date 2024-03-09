@@ -40,7 +40,7 @@ stdenv.mkDerivation(finalAttrs: {
 
   src = fetchgit {
     url = "https://gitlab.com/suyu-emu/suyu.git";
-    ref = "dev";
+#    ref = "dev";
     rev = "7a33aedc57c539682915e9cdc1eb51d5fc9b8183";
     hash = "";
     fetchSubmodules = true;
