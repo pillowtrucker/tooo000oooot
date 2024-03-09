@@ -15,7 +15,12 @@
   overlays = import ./overlays; # nixpkgs overlays
 
 #  example-package = pkgs.callPackage ./pkgs/example-package { };
-  yuzuPackages = pkgs.callPackage ./pkgs/yuzu {};
+  yuzu-mainline = pkgs.callPackage ./pkgs/yuzu {
+    branch = "mainline";
+  };
+  yuzu-early-access = pkgs.callPackage ./pkgs/yuzu {
+    branch = "early-access";
+  };
   citra-canary = pkgs.callPackage ./pkgs/citra {
     branch = "canary";
   };
@@ -23,7 +28,9 @@
   citra-nightly = pkgs.callPackage ./pkgs/citra {
     branch = "nightly";
   };
-  suyuPackages = pkgs.callPackage ./pkgs/suyu {};
+  suyu-dev = pkgs.callPackage ./pkgs/suyu {
+    branch = "dev";
+  };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
